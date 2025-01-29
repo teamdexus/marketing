@@ -4,3 +4,28 @@
 # React Router
 /.react-router/
 /build/
+
+/public/build
+/server-build
+
+.env
+tsconfig.tsbuildinfo
+
+# Prisma
+/prisma/data.db
+/tests/prisma
+
+*.db
+*.sqlite3
+
+/test-results/
+/playwright-report/
+/playwright/.cache/
+/tests/fixtures/email/
+/coverage
+
+/other/cache.db
+
+# Temporary files/folders that won't accidentally be added to git
+*.local.*
+*.ignored.*
