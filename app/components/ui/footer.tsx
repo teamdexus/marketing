@@ -7,11 +7,11 @@ function CallToAction() {
 	return (
 		<div className="relative pt-20 pb-16 text-center sm:py-24">
 			<hgroup>
-				<Subheading>Get started with Team Dexus</Subheading>
+				<Subheading>Get started</Subheading>
 				<p className="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">
-					Ready to dive in?
-					<br />
 					Boost your productivity.
+					<br />
+					Ready to dive in?
 				</p>
 			</hgroup>
 			<p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">
@@ -152,7 +152,7 @@ function SocialLinks() {
 function Copyright() {
 	return (
 		<div className="text-sm/6 text-gray-950">
-			&copy; {new Date().getFullYear()} Dexus Inc.
+			&copy; {new Date().getFullYear()} Dexus Inc. All rights reserved.
 		</div>
 	);
 }

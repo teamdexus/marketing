@@ -1,8 +1,12 @@
 import { BentoCard } from '#app/components/ui/bento-card';
+import { CircleBackground } from '#app/components/ui/circle-background';
 import { Container } from '#app/components/ui/container';
+import { Faqs } from '#app/components/ui/faqs';
 import { Footer } from '#app/components/ui/footer';
 import { Gradient, GradientBackground } from '#app/components/ui/gradient';
 import { Navbar } from '#app/components/ui/navbar';
+import { SecondaryFeatures } from '#app/components/ui/secondary-features';
+import { Services } from '#app/components/ui/services';
 import { Heading, Lead, Subheading } from '#app/components/ui/text';
 import type { Route } from './+types/home';
 
@@ -37,7 +41,7 @@ function Hero() {
 					</h1>
 					<p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
 						Team Dexus helps you identify, explore, and respond to new
-						opportunities at the interstion of AI technology.
+						opportunities with the intersection of AI technology.
 					</p>
 					<div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row"></div>
 				</div>
@@ -183,6 +187,31 @@ function Example() {
 	);
 }
 
+function DarkCallToAction() {
+	return (
+		<div className="mx-2 my-2 relative overflow-hidden rounded-4xl bg-gray-900 py-32">
+			<Container>
+				<div className="absolute top-1/2 left-20 -translate-y-1/2 sm:left-1/2 sm:-translate-x-1/2">
+					<CircleBackground color="#fff" className="animate-pulse" />
+				</div>
+				<Container className="relative">
+					<div className="mx-auto max-w-md sm:text-center">
+						<Subheading dark>AI Technology</Subheading>
+						<h2 className="text-3xl font-medium tracking-tight text-white sm:text-4xl">
+							Customer outreach.
+						</h2>
+						<p className="mt-4 text-lg text-gray-300">
+							Our AI agents analyze the sentiment of your customer conversations
+							in real time, ensuring you're always one step ahead, helping you
+							build a reputation and close the deal.
+						</p>
+					</div>
+				</Container>
+			</Container>
+		</div>
+	);
+}
+
 export default function Home() {
 	return (
 		<div className="overflow-hidden">
@@ -194,7 +223,7 @@ export default function Home() {
 						AI Driven Platform. Automation. Consulting Services.
 					</Subheading>
 					<Heading as="h1" className="mt-2">
-						What’s happening at Dexus Inc.
+						Welcome to Dexus Inc.
 					</Heading>
 					<Lead className="mt-6 max-w-3xl">
 						We’re on a mission to transform the way organizations generate
@@ -202,14 +231,14 @@ export default function Home() {
 						and sell smarter.
 					</Lead>
 				</Container>
-				{/* <Features /> */}
-				<div className="bg-linear-to-b from-white from-50% to-gray-100 py-32">
-					{/* <FeatureSection /> */}
-					{/* <BentoSection /> */}
-				</div>
-				{/* <DarkBentoSection /> */}
+				<SecondaryFeatures />
+				<DarkCallToAction />
+				<Services />
+				<Hero />
+				<Faqs />
 			</main>
 			{/* <Testimonials /> */}
+
 			<Footer />
 		</div>
 	);
