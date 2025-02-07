@@ -30,13 +30,13 @@ export function Services() {
 		<section
 			id="services"
 			aria-labelledby="services-title"
-			className="py-20 sm:py-32"
+			className="py-16 mb-4"
 		>
 			<Container>
 				<div className="lg:flex lg:items-center lg:justify-end">
 					<div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
 						<FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
-							<div className="mx-2 my-2 relative overflow-hidden rounded-4xl bg-gray-900 py-32">
+							<div className="mx-2 my-2 relative overflow-hidden rounded-4xl bg-gray-900 py-4">
 								<img
 									src={cloudIllustrationTealCyan}
 									alt="React Router"

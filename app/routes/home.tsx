@@ -35,16 +35,8 @@ function Hero() {
 						</a>
 					}
 				/> */}
-				<div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
-					<h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
-						Engage
-					</h1>
-					<p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-						Team Dexus helps you identify, explore, and respond to new
-						opportunities with the intersection of AI technology.
-					</p>
-					<div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row"></div>
-				</div>
+
+				<Services />
 			</Container>
 		</div>
 	);
@@ -226,16 +218,30 @@ export default function Home() {
 						Welcome to Dexus Inc.
 					</Heading>
 					<Lead className="mt-6 max-w-3xl">
-						We’re on a mission to transform the way organizations generate
-						revenue by harnessing AI technology to engage with their customers
-						and sell smarter.
+						We’re on a mission to transform the way businesses generate revenue
+						by harnessing AI technology to engage with their customers and sell
+						smarter.
 					</Lead>
 				</Container>
 				<SecondaryFeatures />
 				<DarkCallToAction />
-				<Services />
+				<Container>
+					<div className="relative pt-20 pb-16 text-center sm:py-24">
+						<hgroup>
+							<Subheading>Engage</Subheading>
+							<p className="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">
+								Team Dexus
+								<br />
+							</p>
+						</hgroup>
+						<p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">
+							We are here to help you identify, explore, and empower you with
+							new opportunities with AI technology.
+						</p>
+					</div>
+				</Container>
 				<Hero />
-				<Faqs />
+				{/* <Faqs /> */}
 			</main>
 			{/* <Testimonials /> */}
 
